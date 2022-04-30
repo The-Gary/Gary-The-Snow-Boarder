@@ -14,6 +14,7 @@ public class FinishLine : MonoBehaviour
         {
             Debug.Log("Player has reached the finish line!");
             finishEffect.Play();
+            GetComponent<AudioSource>().Play();
             Invoke("ReloadScene", reloadDelay);
         }
     }
